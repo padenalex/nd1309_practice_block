@@ -36,7 +36,7 @@
             }   
          });
          
-         let result = await promise;
+         await promise;
     
      }
  }

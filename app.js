@@ -1,7 +1,3 @@
-/**
- * Importing the Block class
- */
-//
 const BlockClass = require('./block.js');
 
 /**
@@ -10,10 +6,10 @@ const BlockClass = require('./block.js');
 const block = new BlockClass.Block("Test Block");
 
 // Generating the block hash
-block.generateHash().then((result) => {
-	console.log(`Block Hash: ${result.hash}`);
-	console.log(`Block: ${JSON.stringify(result)}`);
-}).catch((error) => {console.log(error)});
+block.generateHash();
+console.log(`Block Hash: ${block.hash}`);
+console.log(`Block: ${JSON.stringify(block)}`);
+
 
 /**
  * Step 3: Run the application in node.js
